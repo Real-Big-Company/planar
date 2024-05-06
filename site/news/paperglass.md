@@ -1,7 +1,7 @@
 ---
 _schema: default
 date: 2024-01-01T00:00:00Z
-title: "Planar Files Unveils Flat Flexible "PaperGlass" Displays"
+title: 'Planar Files Unveils Flat Flexible "PaperGlass" Displays'
 seo:
   page_description:
   canonical_url:
@@ -12,10 +12,10 @@ seo:
 author: TODO
 thumbImg:
   image: /images/news/screen.png
-  image_alt: "Planar Files Unveils Flat Flexible "PaperGlass" Displays"
+  image_alt: 'Planar Files Unveils Flat Flexible "PaperGlass" Displays'
 featuredImg:
   image: /images/news/screen.png
-  image_alt: "Planar Files Unveils Flat Flexible "PaperGlass" Displays"
+  image_alt: 'Planar Files Unveils Flat Flexible "PaperGlass" Displays'
 draft: false
 ---
 
