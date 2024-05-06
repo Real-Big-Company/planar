@@ -1,0 +1,40 @@
+{
+  "logo": "/images/footer-logo.svg",
+  "copyright": "RealBig Company",
+  "social": [
+    {
+      "link": "https://conf.11ty.dev/",
+      "icon": "🎈",
+      "icon_alt": "11ty"
+    },
+    {
+      "link": "https://cloudcannon.com/",
+      "icon": "☁️",
+      "icon_alt": "CloudCannon"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Sections",
+      "links": [
+        {
+          "link": "/",
+          "text": "Home"
+        },
+        {
+          "link": "/news/",
+          "text": "News"
+        },
+        {
+          "link": "/reports/",
+          "text": "Reports"
+        }
+      ]
+    }
+  ],
+  "_inputs": {
+    "logo": {
+      "type": "image"
+    }
+  }
+}

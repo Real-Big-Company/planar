@@ -1,0 +1,28 @@
+{
+  "logo": "/images/logo.svg",
+  "items": [
+    {
+      "text": "Home",
+      "link": "/",
+      "enable_dropdown": false,
+      "dropdown": []
+    },
+    {
+      "text": "News",
+      "link": "/news/",
+      "enable_dropdown": false,
+      "dropdown": []
+    },
+    {
+      "text": "Reports",
+      "link": "/reports/",
+      "enable_dropdown": false,
+      "dropdown": []
+    }
+  ],
+  "enable_nav_btn": false,
+  "nav_btn": {
+    "text": "-",
+    "link": "/-/"
+  }
+}

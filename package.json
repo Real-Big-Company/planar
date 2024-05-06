@@ -1,0 +1,31 @@
+{
+  "name": "rbc_fermented",
+  "version": "1.0.1",
+  "description": "Real Big Company — Fermented Foods Division",
+  "scripts": {
+    "bookshop:watch": "bookshop-browser",
+    "bookshop-sass:fetch-theme-color": "node site/js/fetch-theme-color.js",
+    "bookshop-sass:build": "bookshop-sass -b component-library -o site/css/theme.css",
+    "bookshop-sass:watch": "bookshop-sass -b component-library -o site/css/theme.css -w",
+    "eleventy:build": "ELEVENTY_ENV=production eleventy",
+    "eleventy:watch": "ELEVENTY_ENV=development eleventy --serve",
+    "start": "npm-run-all bookshop-sass:fetch-theme-color bookshop-sass:build --parallel bookshop-sass:watch bookshop:watch eleventy:watch"
+  },
+  "author": "CloudCannon",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
+    "@bookshop/browser": "3.9.0",
+    "@bookshop/eleventy-bookshop": "3.9.0",
+    "@bookshop/eleventy-engine": "3.9.0",
+    "@bookshop/generate": "3.9.0",
+    "eleventy-plugin-wordcount": "^1.0.5",
+    "markdown-it": "^13.0.1",
+    "npm-run-all": "^4.1.5",
+    "punycode": "^2.1.1"
+  },
+  "devDependencies": {
+    "@bookshop/sass": "3.9.0"
+  }
+}
