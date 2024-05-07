@@ -6,6 +6,9 @@ collections_config:
     disable_add_folder: true
     output: true
     path: pages
+    schemas:
+      default:
+        path: site/schemas/page.md
     _enabled_editors:
       - visual
   news:
