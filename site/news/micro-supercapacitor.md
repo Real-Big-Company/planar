@@ -1,7 +1,7 @@
 ---
 _schema: default
 date: 2024-01-01T00:00:00Z
-title: World's Flattest Ceramic Revolutionizes Ultracapacitors, Websites
+title: World's Flattest File Revolutionizes Ultracapacitors, Websites
 seo:
   page_description:
   canonical_url:
@@ -19,9 +19,9 @@ featuredImg:
 draft: false
 syndicate: true
 ---
-The Planar Files team has developed a new class of energy storage ceramics with a thickness of just 3 atoms - making them the flattest solid materials produced.
+The Planar Files team has developed a new class of energy storage ceramic file with a thickness of just 3 atoms - making them the flattest solid materials produced.
 
-The electrically conductive ceramics exhibit extremely high surface area that, when combined with their 2D geometry, allows them to store substantially more charge at greater charge/discharge rates compared to existing ultracapacitor designs.
+The electrically conductive ceramic filess exhibit extremely high surface area that, when combined with their 2D geometry, allows them to store substantially more charge at greater charge/discharge rates compared to existing ultracapacitor designs.
 
 "We've essentially created the first viable planar micro-supercapacitor that can be easily manufactured using conventional ceramic sintering techniques," said Dr. Sayuri Namba who led the materials research.
 
