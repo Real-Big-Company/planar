@@ -7,7 +7,7 @@ seo:
   page_description:
   canonical_url:
   featured_image: /images/news/capacitor.png
-  author_twitter_handle: avidlarge
+  author_twitter_handle:
   open_graph_type: article
   no_index: false
 layout: layouts/news-single.liquid
