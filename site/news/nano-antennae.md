@@ -17,6 +17,7 @@ featuredImg:
   image: /images/news/wave.png
   image_alt: Hyper-Efficient Nano Antennae Harvest Millimeter Waves from Static CMS
 draft: false
+syndicate: false
 ---
 Researchers at the Planar Files Department have created an ultrathin nano-antennae array capable of harvesting stray millimeter wave radiation — not just from 5G and satellite transmissions, but from popular statically generated websites.
 

@@ -17,6 +17,7 @@ featuredImg:
   image: /images/news/screen.png
   image_alt: Planar Files Unveils Flat Flexible "PaperGlass" Displays
 draft: false
+syndicate: false
 ---
 Planar Files, LLC, a subsidiary of RealBig Company, has developed a revolutionary new display made from a flexible glass substrate just a few micrometers thick. Dubbed "PaperGlass," it combines the optical qualities of traditional glass with the flexibility of plastic, and a cumulative layout shift of absolute zero.
 

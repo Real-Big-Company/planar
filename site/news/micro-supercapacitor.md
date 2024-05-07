@@ -17,6 +17,7 @@ featuredImg:
   image: /images/news/capacitor.png
   image_alt: World's Flattest Ceramic Revolutionizes Ultracapacitors, Websites
 draft: false
+syndicate: true
 ---
 The Planar Files team has developed a new class of energy storage ceramics with a thickness of just 3 atoms - making them the flattest solid materials produced.
 

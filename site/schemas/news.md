@@ -16,4 +16,5 @@ featuredImg:
   image: 
   image_alt:
 draft: true 
+syndicate: false
 ---
