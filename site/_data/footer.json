@@ -18,16 +18,20 @@
       "title": "Sections",
       "links": [
         {
-          "link": "/",
-          "text": "Home"
+          "text": "Home",
+          "link": "/"
         },
         {
-          "link": "/news/",
-          "text": "News"
+          "text": "News",
+          "link": "/news/"
         },
         {
-          "link": "/reports/",
-          "text": "Reports"
+          "text": "Reports",
+          "link": "/reports/"
+        },
+        {
+          "text": "About",
+          "link": "/about/"
         }
       ]
     }

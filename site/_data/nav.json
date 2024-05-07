@@ -18,6 +18,12 @@
       "link": "/reports/",
       "enable_dropdown": false,
       "dropdown": []
+    },
+    {
+      "text": "About",
+      "link": "/about/",
+      "enable_dropdown": false,
+      "dropdown": []
     }
   ],
   "enable_nav_btn": false,
