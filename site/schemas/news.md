@@ -1,7 +1,6 @@
 ---
 date: 
 title: 
-post_permalink: /news/{{title | slugify }}
 seo:
   page_description: 
   canonical_url: 
@@ -9,9 +8,6 @@ seo:
   author_twitter_handle: 
   open_graph_type: article
   no_index: false
-layout: layouts/news-single.liquid
-tags:
-  - blog
 author: 
 thumbImg:
   image: 
