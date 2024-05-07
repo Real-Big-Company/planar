@@ -1,3 +1,5 @@
+const syndicatedNews = require("../../data-lake/news/aggregate/syndicate/true/page-1.json");
+
 // Set to true for development environment, false for production.
 // When true, developers can see all posts (including drafts and future-dated posts)
 // without having to manually change each post's front matter.
@@ -14,6 +16,9 @@ module.exports = {
   layout: "layouts/news-single.liquid",
   tags: ["news"],
   eleventyComputed: {
+    syndicatedNews: syndicatedNews.values.filter(
+      (v) => v.data.division !== "planar"
+    ),
     eleventyExcludeFromCollections: function (data) {
       if (showDraft(data)) {
         return data.eleventyExcludeFromCollections;

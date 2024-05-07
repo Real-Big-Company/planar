@@ -5,3 +5,5 @@
 
 [ ! -e component-library ] && ln -s ../common/component-library component-library
 [ ! -e site/_includes/layouts ] && ln -s ../../../common/layouts site/_includes/layouts
+
+[ ! -e data-lake ] && ln -s ../data-lake/api data-lake
