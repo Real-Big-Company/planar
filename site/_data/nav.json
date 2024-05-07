@@ -24,6 +24,12 @@
       "link": "/about/",
       "enable_dropdown": false,
       "dropdown": []
+    },
+    {
+      "text": "RealBig",
+      "link": "https://realbig.company/",
+      "enable_dropdown": false,
+      "dropdown": []
     }
   ],
   "enable_nav_btn": false,
