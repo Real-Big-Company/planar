@@ -3,7 +3,6 @@ collections_config_override: true
 collections_config:
   pages:
     icon: feed
-    disable_add: true
     disable_add_folder: true
     output: true
     path: pages
