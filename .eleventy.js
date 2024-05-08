@@ -8,12 +8,14 @@ const MarkdownIt = require("markdown-it"),
   });
 
 module.exports = function (eleventyConfig) {
-
   eleventyConfig.addFilter("length", (input) => {
     return input.length;
   });
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+  });
+  eleventyConfig.addFilter("filename", (url) => {
+    return url.match(/\/([^\/]+)\.\w+$/)?.[1] || "unknown";
   });
   eleventyConfig.addPlugin(emojiReadTime, {
     showEmoji: false,
