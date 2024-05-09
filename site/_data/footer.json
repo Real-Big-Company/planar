@@ -11,6 +11,11 @@
       "link": "https://cloudcannon.com/",
       "icon": "☁️",
       "icon_alt": "CloudCannon"
+    },
+    {
+      "link": "https://github.com/Real-Big-Company",
+      "icon": "GitHub",
+      "icon_alt": "Real Big Company"
     }
   ],
   "sections": [
