@@ -31,7 +31,7 @@ module.exports = {
         if (data.post_permalink) {
           return data.post_permalink;
         } else {
-          return "/blog/{{ title | slugify }}/";
+          return "/news/{{ title | slugify }}/";
         }
       } else {
         return false;
