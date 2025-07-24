@@ -1,10 +1,20 @@
 source: site
-collections_config_override: true
+
+paths:
+  uploads: images
+  static: ""
+
+commit_templates:
+  - label: Default message
+    template_string: '[default_commit_message]'
+  - label: Custom message
+    template_string: '{message}'
+
 collections_config:
   pages:
     icon: feed
     disable_add_folder: true
-    output: true
+    url: "/[full_slug]/"
     path: pages
     schemas:
       default:
@@ -15,7 +25,7 @@ collections_config:
     path: news
     icon: article
     disable_add_folder: true
-    output: true
+    url: "/news/[full_slug]/"
     schemas:
       default:
         path: site/schemas/news.md
@@ -31,7 +41,7 @@ collections_config:
     path: reports
     icon: article
     disable_add_folder: true
-    output: true
+    url: "/reports/[full_slug]/"
     schemas:
       default:
         path: site/schemas/reports.md
@@ -44,43 +54,38 @@ collections_config:
       - content
       - visual
   data: 
-    output: true
+    disable_url: true
     path: _data
     icon: settings
     disable_add: true
     disable_add_folder: true
     _enabled_editors:
       - data
-    filter:
-      exclude: 
-        - nav.json
-        - footer.json
-        - theme.json
+    glob:
+      - "!nav.json"
+      - "!footer.json"
+      - "!theme.json"
   site_navigation:
-    output: true
+    disable_url: true
     path: _data
     icon: table_rows
     disable_add: true
     disable_add_folder: true
     _enabled_editors:
       - data
-    filter:
-      base: none
-      include: 
-        - nav.json
-        - footer.json
+    glob:
+      - nav.json
+      - footer.json
   theme_palette:
-    output: true
+    disable_url: true
     path: _data
     disable_add: true
     disable_add_folder: true
     icon: color_lens
     _enabled_editors:
       - data
-    filter:
-      base: none
-      include: 
-        - theme.json
+    glob:
+      - theme.json
 
 collection_groups:
   - heading: Pages
@@ -96,38 +101,35 @@ collection_groups:
       - theme_palette
       - site_navigation
 
-
 _structures:
-  content_blocks:
-    style: modal
   dropdown: 
     values:
-      value:
-        dropdown_text:
-        dropdown_link:
+      - value:
+          dropdown_text:
+          dropdown_link:
   social:
     values:
-      value:
-        link: 
-        icon: 
-        icon_alt:
+      - value:
+          link: 
+          icon: 
+          icon_alt:
   sections:
     values:
-      value:
-        title:
-        links:  
+      - value:
+          title:
+          links:  
   links:
     values:
-      value:
-        text: 
-        link:
+      - value:
+          text: 
+          link:
 
 
 _inputs:
   post_permalink:
     hidden: true
   date:
-    instance_value: now
+    instance_value: NOW
   title_suffix:
     comment: Added at the end of the title and highlighted in a different color
   pagination.data:
@@ -170,6 +172,17 @@ _inputs:
     comment: Automatically prefixed with the current year
   isActive:
     type: switch
+  seo:
+    type: object
+    comment: Set SEO values for the page, otherwise the [site defaults](cloudcannon:collections/_data/site.json) will be used as a fallback.
+    options:
+      preview:
+        icon: query_stats
+        text:
+          - 'Search engine optimization'
+        subtext:
+          - key: page_description
+          - 'Update SEO values for the page'  
   page_description:
     comment: If empty, defaults to the description set in the Site SEO data file 
   favicon_icon:
@@ -213,7 +226,10 @@ _inputs:
     type: image
   permalink:
     type: text
-    comment: Prefix the url with a forward slash e.g. /blog/
+    # comment: Prefix the url with a forward slash e.g. /blog/
+    options:
+      pattern: '\/(.*)\/|\/'
+      pattern_message: Permalink must start and end with a forward slash
   layout:
     hidden: true
   eleventyExcludeFromCollections:
@@ -225,10 +241,3 @@ _inputs:
     type: switch
   nav_btn:
     hidden: "!enable_nav_btn"
-  
-paths:
-  uploads: images
-  data: _data
-  collections: content
-  includes: layouts
-  layouts: layouts
