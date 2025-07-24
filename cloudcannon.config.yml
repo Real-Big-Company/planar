@@ -15,7 +15,7 @@ collections_config:
     path: pages
     icon: feed
     disable_add_folder: true
-    url: "{permalink}"
+    url: "/{permalink}/"
     schemas:
       default:
         path: site/schemas/page.md
