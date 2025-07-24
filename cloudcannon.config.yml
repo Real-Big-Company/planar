@@ -227,7 +227,7 @@ _inputs:
   permalink:
     type: text
     options:
-      pattern: '\/.*\/|\/'
+      pattern: '^[\/].*[\/]$'
       pattern_message: Permalink must start and end with a forward slash.
   layout:
     hidden: true
