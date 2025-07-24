@@ -20,8 +20,6 @@ featuredImg:
   image_alt:
 draft: false
 ---
-If I change this it should change the other sites
-
 Revenue: $█ ██ if ███ trends continue
 
 * YoY Growth: +███%
