@@ -25,7 +25,7 @@ collections_config:
     path: news
     icon: article
     disable_add_folder: true
-    url: "/news/{title|slugify}/"
+    url: "/news/[slug]/"
     schemas:
       default:
         path: site/schemas/news.md
@@ -41,7 +41,7 @@ collections_config:
     path: reports
     icon: article
     disable_add_folder: true
-    url: "/reports/{title|slugify}/"
+    url: "/reports/[slug]/"
     schemas:
       default:
         path: site/schemas/reports.md
