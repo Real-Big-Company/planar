@@ -226,10 +226,9 @@ _inputs:
     type: image
   permalink:
     type: text
-    # comment: Prefix the url with a forward slash e.g. /blog/
     options:
-      pattern: '\/(.*)\/|\/'
-      pattern_message: Permalink must start and end with a forward slash
+      pattern: '\/.*\/|\/'
+      pattern_message: Permalink must start and end with a forward slash.
   layout:
     hidden: true
   eleventyExcludeFromCollections:
