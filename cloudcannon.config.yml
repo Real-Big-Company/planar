@@ -6,9 +6,9 @@ paths:
 
 commit_templates:
   - label: Default message
-    template_string: '[default_commit_message]'
+    template_string: "[default_commit_message]"
   - label: Custom message
-    template_string: '{message}'
+    template_string: "{message}"
 
 collections_config:
   pages:
@@ -179,10 +179,10 @@ _inputs:
       preview:
         icon: query_stats
         text:
-          - 'Search engine optimization'
+          - "Search engine optimization"
         subtext:
           - key: page_description
-          - 'Update SEO values for the page'  
+          - "Update SEO values for the page"  
   page_description:
     comment: If empty, defaults to the description set in the Site SEO data file 
   favicon_icon:
@@ -227,7 +227,7 @@ _inputs:
   permalink:
     type: text
     options:
-      pattern: '^[\/].*[\/]$'
+      pattern: "^[\/].*[\/]$"
       pattern_message: Permalink must start and end with a forward slash.
   layout:
     hidden: true
