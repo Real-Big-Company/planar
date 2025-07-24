@@ -12,10 +12,10 @@ commit_templates:
 
 collections_config:
   pages:
+    path: pages
     icon: feed
     disable_add_folder: true
-    url: "/[full_slug]/"
-    path: pages
+    url: "/[slug]/"
     schemas:
       default:
         path: site/schemas/page.md
@@ -25,7 +25,7 @@ collections_config:
     path: news
     icon: article
     disable_add_folder: true
-    url: "/news/[full_slug]/"
+    url: "/news/[slug]/"
     schemas:
       default:
         path: site/schemas/news.md
@@ -41,7 +41,7 @@ collections_config:
     path: reports
     icon: article
     disable_add_folder: true
-    url: "/reports/[full_slug]/"
+    url: "/reports/[slug]/"
     schemas:
       default:
         path: site/schemas/reports.md
