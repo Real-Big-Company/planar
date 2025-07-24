@@ -16,6 +16,8 @@ thumbImg: {}
 featuredImg: {}
 draft: false
 ---
+This'll show up on RBC's main site!
+
 **Revenue**: $███M
 
 **Projected Growth** █% YoY
