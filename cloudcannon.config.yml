@@ -172,6 +172,17 @@ _inputs:
     comment: Automatically prefixed with the current year
   isActive:
     type: switch
+  seo:
+    type: object
+    comment: Set SEO values for the page, otherwise the [site defaults](cloudcannon:collections/_data/site.json) will be used as a fallback.
+    options:
+      preview:
+        icon: query_stats
+        text:
+          - 'Search engine optimization'
+        subtext:
+          - key: page_description
+          - 'Update SEO values for the page'  
   page_description:
     comment: If empty, defaults to the description set in the Site SEO data file 
   favicon_icon:
@@ -215,7 +226,10 @@ _inputs:
     type: image
   permalink:
     type: text
-    comment: Prefix the url with a forward slash e.g. /blog/
+    # comment: Prefix the url with a forward slash e.g. /blog/
+    options:
+      pattern: '\/(.*)\/|\/'
+      pattern_message: Permalink must start and end with a forward slash
   layout:
     hidden: true
   eleventyExcludeFromCollections:
