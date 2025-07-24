@@ -16,8 +16,6 @@ thumbImg: {}
 featuredImg: {}
 draft: false
 ---
-Test change
-
 **Revenue**: $███M
 
 **Projected Growth** █% YoY
